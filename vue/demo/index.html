@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue Demo</title>
+        <link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../build/app.css">
+    </head>
+    <body>
+
+        <div id="app" class="container">
+            <!-- DEMO -->
+            <demo>
+                <div class="jquery-element">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Click the following button to hide/show the input via jQuery</p>
+                            <div id="an-input-group" class="mb-3">
+                                <label for="an-input" class="form-label">An input</label>
+                                <input type="input" class="form-control" id="an-input" aria-describedby="an-input-help">
+                                <div id="an-input-help" class="form-text">This input can be toggled.</div>
+                            </div>
+                            <a id="an-input-button" class="btn btn-primary">Toggle via jQuery</a>
+                        </div>
+                    </div>
+                </div>
+                <p slot="message">This message is show inside the 2nd slot</p>
+            </demo>
+        </div>
+
+        <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../node_modules/vue/dist/vue.min.js"></script>
+        <script src="../build/init.js"></script>
+        <script src="../build/app.js"></script>
+
+        <script type="text/javascript">
+            $('#an-input-button').click((e) => {
+                e.preventDefault();
+                if ($('#an-input-group').is(':visible')) {
+                    $('#an-input-group').hide();
+                } else {
+                    $('#an-input-group').show();
+                }
+            });
+        </script>
+
+    </body>
+</html>

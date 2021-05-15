@@ -1,0 +1,43 @@
+{
+  "name": "vue-vs-lightning",
+  "version": "1.0.0",
+  "description": "Comparison repo.",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amostajo/vue-vs-lightning.git"
+  },
+  "keywords": [
+    "vue",
+    "lightning"
+  ],
+  "author": "Ale Mostajo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amostajo/vue-vs-lightning/issues"
+  },
+  "homepage": "https://github.com/amostajo/vue-vs-lightning#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0",
+    "v-tooltip": "^2.0.3",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^4.3.0",
+    "mini-css-extract-plugin": "^0.11.3",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2",
+    "vue-loader": "^15.9.3",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
