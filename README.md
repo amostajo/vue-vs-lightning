@@ -1,4 +1,4 @@
-# Vue VS Lightnint
+# VueJS VS Lightning Framework
 
 The purpose of the repository is to check the difference and limitations between both [VueJS](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/intro_framework.htm) and [Lightning Framework](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/intro_framework.htm).
 
