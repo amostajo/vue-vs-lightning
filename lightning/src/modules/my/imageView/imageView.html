@@ -1,0 +1,9 @@
+<template>
+    <div if:true={image.src} class="image-view-component card">
+        <img src={image.src} alt={image.alt} class="card-img-top">
+        <div if:true={hasTitleOrDescription} class="card-body">
+            <h5 if:true={image.title} class="card-title">{image.title}</h5>
+            <p if:true={image.description} class="card-text">{image.description}</p>
+        </div>
+    </div>
+</template>

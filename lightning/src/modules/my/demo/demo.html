@@ -20,5 +20,18 @@
         <p>The following will show how parent values can be bind with children components, how to interact with the events thrown by components and how references work to trigger component methods.</p>
         <my-binding-input value={binding} onadd={handleAddBinding}></my-binding-input>
         <my-bindings bindings={bindings} onremove={handleRemoveBinding}></my-bindings>
+        <hr>
+        <h2>Object binding</h2>
+        <div class="row">
+            <dic class="col-sm-4">
+                <my-image-view image={image}></my-image-view>
+            </dic>
+            <dic class="col-sm-4">
+                <my-image-view image={image2}></my-image-view>
+            </dic>
+            <dic class="col-sm-4">
+                <my-image-view image={image3}></my-image-view>
+            </dic>
+        </div>
     </div>
 </template>
