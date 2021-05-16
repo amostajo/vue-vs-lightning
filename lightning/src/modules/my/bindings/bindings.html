@@ -1,0 +1,14 @@
+<template>
+    <p class="not-supported">
+        <code>Arrays</code> and <code>objects</code> passed to components can not be mutated. Forcing to add code logic.
+    </p>
+    <ul class="bindings">
+        <template for:each={bindings} for:item="binding" for:index="index">
+            <li key={binding}>
+                <span class="binding-index">{index}:</span>&nbsp;
+                <span class="binding">{binding}</span>&nbsp;
+                <a href="#" class="remove" data-index={index} onclick={handleRemove}>Remove</a>   
+            </li>
+        </template>
+    </ul>
+</template>

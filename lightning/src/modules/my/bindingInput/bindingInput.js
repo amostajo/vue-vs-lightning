@@ -1,23 +1,15 @@
 import { LightningElement, api } from 'lwc';
 
 export default class BindingInput extends LightningElement {
-    _value = undefined;
-    handleInput(event)
-    {
-        this._value = event.target.value;
+    @api value = undefined;
+    handleInput(event) {
+        this.value = event.target.value;
     }
-    handleAdd()
-    {
-
+    handleAdd() {
+        if (this.value)
+            this.dispatchEvent(new CustomEvent('add', {detail: this.value}));
     }
-    @api
-    get value()
-    {
-        return this._value;
-    }
-    set value(value)
-    {
-        this._value = value;
-        this.setAttribute( 'value', this._value );
+    @api clear() {
+        this.value = '';
     }
 }

@@ -18,7 +18,7 @@
         <hr>
         <h2>Components, bindings, events and references</h2>
         <p>The following will show how parent values can be bind with children components, how to interact with the events thrown by components and how references work to trigger component methods.</p>
-        <my-bindingInput value={binding}></my-bindingInput>
-        <pre>{binding}</pre>
+        <my-binding-input value={binding} onadd={handleAddBinding}></my-binding-input>
+        <my-bindings bindings={bindings} onremove={handleRemoveBinding}></my-bindings>
     </div>
 </template>
