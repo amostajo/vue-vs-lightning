@@ -1,0 +1,24 @@
+<template>
+    <div class="container">
+        <h1>Lightning Demo</h1>
+        <hr>
+        <h2>Slots</h2>
+        <p>Slots compatibility check, the first and defaylt slot will load HTML that will trigger jQuery code, the second slot is secondary.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <slot></slot>
+            </div>
+            <div class="col-sm-6">
+                <slot name="second"></slot>
+            </div>
+        </div>
+        <hr>
+        <h2 class="not-supported">Multi CSS framework support</h2>
+        <p class="not-supported">Only supports CSS, any other style language must be compiled separately.</p>
+        <hr>
+        <h2>Components, bindings, events and references</h2>
+        <p>The following will show how parent values can be bind with children components, how to interact with the events thrown by components and how references work to trigger component methods.</p>
+        <my-bindingInput value={binding}></my-bindingInput>
+        <pre>{binding}</pre>
+    </div>
+</template>

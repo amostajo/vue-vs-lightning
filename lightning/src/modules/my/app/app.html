@@ -1,0 +1,12 @@
+<template>
+    <my-demo>
+        <div class="first-slot not-supported">
+            <h3>jQuery (default slot)</h3>
+            <p class="alert alert-danger">jQuery is supposed to be on the main HTML template, which is not accesible due to how app is appended.</p>
+        </div>
+        <div slot="second">
+            <h3>2) multiple slots</h3>
+            <p class="second-slot">This message is show inside the 2nd slot</p>
+        </div>
+    </my-demo>
+</template>
